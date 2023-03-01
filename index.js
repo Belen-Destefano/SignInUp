@@ -136,7 +136,11 @@ const init = () => {
     
     setTimeout(() => {
         spinnerOverlay.classList.add("spinnerNone");
-        document.location.href = "../login/login.html";
+       
+        document.location.href = " https://belen-destefano.github.io/SignInUp/login/login.html";
+
+        // document.location.href = "../login/login.html";
+
         // Continuar con la ejecución del script después de redirigir al usuario
     }, 2000);
     });
@@ -145,7 +149,9 @@ const init = () => {
         spinnerOverlay.classList.remove("spinnerNone");
         setTimeout(() => {
           spinnerOverlay.classList.add("spinnerNone");
-          document.location.href = "../signup/signUp.html";
+          // document.location.href = "../signup/signUp.html";
+          document.location.href = " https://belen-destefano.github.io/SignInUp/signup/signUp.html";
+
         }, 2000);
     });
 };
