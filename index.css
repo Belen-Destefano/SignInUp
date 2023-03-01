@@ -1,0 +1,437 @@
+*{
+    margin: 0px;
+}
+
+/**********************MODIFICACION DE NAV**************************/
+
+.navNone{
+    display: none;
+}
+
+#menu li{
+    color: #575151;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+   
+}
+
+
+
+#menu a li:hover{
+    background-color: #dcdcdc80;
+    border-bottom: 2px solid #dddd2e;
+    box-sizing: border-box;
+    margin-bottom: -2px; /* Agregar margen inferior igual al ancho del borde */
+}
+
+
+/**********************SPINNER**************************/
+.spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #7983ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.spinnerOverlay {
+  position: fixed; /* Establece la posición fija */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Agrega un fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinnerNone{
+    display: none;
+}
+
+/*********************USUARIO LOGUEADO*************************/
+.userBoton{
+    cursor: pointer;
+    height: 5em;
+    position: relative;
+    width: 60%;
+}
+
+.containerUser{
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 86%;
+    padding-top: 6%;
+}
+
+.logoutnone{
+    display: none;
+}
+
+.logoutblock {
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    right: 35px;
+    z-index: 10000;
+    background-color: #dddd2e;
+    backdrop-filter: blur(3px);
+    color: #f2788e;
+    padding: 6px;
+    border-radius: 4px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 1px 4px black;
+}
+
+.userWelcome{
+    
+    color: whitesmoke;
+    padding-right: 36px;
+    text-align: end;
+    padding-top: 3%;
+
+}
+
+
+li{
+    color: white;
+    list-style-type:none
+}
+
+ul{
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+/* /////////////////GENERALES//////////////////// */
+body{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+    background: linear-gradient(90deg, rgb(33 27 46) 0%, rgba(85,77,100,1) 74%);
+
+}
+
+button{
+    border: none;
+}
+
+input{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+}
+
+input:focus{
+
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #a42424a8;
+}
+
+select:focus{
+
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #a42424a8;
+}
+
+
+h1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 25px; */
+
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    text-align: center;
+}
+
+
+p{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
+/* /////////////////HOME//////////////////// */
+.backgroundHome{
+    background-image: url(/assets/encabezadoOne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(0.5);
+    background-position-y: bottom;
+}
+
+.containerButtomFooterHome{
+            
+    width: 100%;
+    background-color: #efefef;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.buttonHome{
+    width: 50%;
+    cursor: pointer;
+    border: 0px;
+    padding: 3%;
+}
+
+.buttonHome:hover {
+    background-color: #dddd2e;
+    color: rgb(255, 255, 255);
+}
+
+button:hover p{
+text-shadow: 1px 0px 3px #575151;
+}
+
+
+.containerHome{
+    overflow: hidden;
+    width: 26em;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    /* padding-bottom: 4%; */
+
+    background-image: url(/assets/encabezadoOne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}           
+
+
+/* ///////////////SINGUP Y LOGIN/////////////// */
+
+.backgroundForm{
+    background-image: url(/assets/backgroundOne.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    backdrop-filter: brightness(0.5);
+    background-position-y: bottom;
+}
+
+small{
+    display: block;
+    margin: 0px 6px;
+    color: red;
+}
+
+input {
+
+    margin: 8px;
+    padding: 6px;
+    
+}
+
+select {
+
+    margin: 0px 6px;
+    padding: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+.nameBackground {
+    color: white;
+    position: absolute;
+    bottom: 2px;
+    font-size: 6px;
+    font-weight: 100;
+    overflow: hidden;
+    height: 7px;
+    text-align: left;
+    font-family: monospace;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.encabezado{
+
+    transform: rotate(13deg) scale(2.0);
+    height: 40vh;
+    background-image: url(/assets/encabezadoOne.jpg);
+    background-repeat: no-repeat;
+    background-position-y: initial;
+    background-size: cover;
+
+}
+
+
+.containerForm{
+    width: 100%;
+    height: 70vh;
+    background-color: #efefef;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 20%;
+    background-color: whitesmoke;
+}
+
+.buttonSubmit{
+    margin: 2% auto;
+    padding: 8px;
+    width: 97%;
+
+    border: none;
+    background-color: #dddd2e;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0px 3px #575151;
+    cursor: pointer;
+}
+
+.showmessage{
+    margin: 13px;
+    display: block;
+
+}
+
+
+.containerButtonFooter {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttonFooter{
+    width: 50%;
+    cursor: pointer;
+    border: 0px;
+    padding: 3%;
+}
+
+.buttonFooter:hover{
+    text-shadow: none;
+    background-color: #ddd8d8;
+}
+.buttonFooter:hover p{
+ 
+    text-shadow: none;
+}
+/************/
+.containerLogin {
+    width: 26em;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+
+
+/************/           
+
+.signUpForm{
+   
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    width: 100%;   
+    align-items: center;  
+    flex-wrap: wrap;
+
+}
+.signUpForm input{
+
+    margin: 0px 6px;
+}
+
+
+
+
+/**RESPONSIVE/////////////////////////////////////*/
+@media only screen and (max-width:468px) {
+#menu {
+    position: absolute;
+    width: 64px !important;
+    margin: -100px 0 0 -50px;
+    padding: 49px;
+}
+}
+
+@media only screen and (max-width:420px) {
+    .containerLogin {
+        width: 100%;
+        height: 100%;
+    }
+    .containerHome {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .containerUser {
+     
+        height: 86%;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:360px) {
+    .userBoton {
+ 
+        width: 62%;
+    }
+ 
+
+    .containerUser {
+     
+        height: 80%;
+    }
+
+    #menu {
+      
+        width: 43px !important;
+    }
+
+    
+}
+
+
+

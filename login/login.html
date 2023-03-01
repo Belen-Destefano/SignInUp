@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS-->
+     <link rel="stylesheet" href="../index.css">
+
+     <!--FONT-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+      <!-- iconos de FontAwesome para el toggle de la constraseña-->
+    <script
+    src="https://kit.fontawesome.com/69ab8990bd.js"
+    crossorigin="anonymous"></script>
+
+    <title>Login</title>
+
+
+</head>
+
+<body class="backgroundForm">
+
+  <div class="spinnerOverlay spinnerNone">
+    <div class="spinner"></div>
+  </div>
+ 
+  <div class="containerLogin">
+      <div class="encabezado">
+        <h1 class="nameBackground"></h1>
+      </div>
+      
+  
+      <div class="containerForm">
+  
+          <article class="form-container">           
+              <form action="">
+                <div class="userInput">
+                  <!-- <small class="showmessage"></small> -->
+                  <label for="user"></label>
+                  <input
+                    type="text"
+                    name="user"
+                    id="user"
+                    placeholder="e-mail adress"
+                  />
+                  <!-- <small class="showmessage"></small> -->
+                </div>
+                <div class="passInput">
+                  <div class="passwordContainer">
+                    <label for="current-password" class="current-password">
+                      <input
+                        type="password"
+                        name="current-password"
+                        id="current-password"
+                        placeholder="password"
+                      /><i class="fa-regular fa-eye-slash" id="show-password"></i>
+                    </label>
+                    <!-- <small class="showmessage"></small> -->
+                  </div>
+                </div>
+        
+                <small class="showmessage"></small>
+                <button type="submit" class="buttonSubmit"> <p>Log in</p></button>
+              
+              </form>
+              
+            </article>
+          </div>
+          <div class="containerButtonFooter">
+            <button class="buttonFooter backtohome"> <p>Back to home</p> </button>
+            <button class="buttonFooter gotocreatebtn"> <p>Create an account</p> </button>
+      
+          </div>
+  </div>
+
+
+  <script src="login.js"></script>
+  <script src="validation.js"></script>
+</body>
+</html>
