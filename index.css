@@ -235,7 +235,7 @@ text-shadow: 1px 0px 3px #575151;
 /* ///////////////SINGUP Y LOGIN/////////////// */
 
 .backgroundForm{
-    background-image: url(/assets/backgroundOne.jpg);
+    background-image: url(assets/backgroundOne.jpg);
     background-repeat: repeat;
     background-size: contain;
     backdrop-filter: brightness(0.5);
@@ -284,7 +284,7 @@ select {
 
     transform: rotate(13deg) scale(2.0);
     height: 40vh;
-    background-image: url(/assets/encabezadoOne.jpg);
+    background-image: url(assets/encabezadoOne.jpg);
     background-repeat: no-repeat;
     background-position-y: initial;
     background-size: cover;
