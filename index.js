@@ -80,7 +80,7 @@ const renderuserLogOut= (userlogedTrue) =>{
     containerButtomFooterHome.style.display = "flex";
     
     clearInterval(interval);
-    document.body.style.backgroundImage = "url(/assets/encabezadoOne.jpg)";
+    document.body.style.backgroundImage = "url(assets/encabezadoOne.jpg)";
 
     if(userlogedTrue){
       closingSession(userlogedTrue);

@@ -1,7 +1,7 @@
 [
-    {"name": "find the best style that represents you - find the best style that represents you - find the best style that represents you - find the best style that represents you - find the best style that represents you " , "background": "../assets/backgroundOne.jpg" , "id": 1},
-    {"name": "every step you take and the decisions you make - every step you take and the decisions you make - every step you take and the decisions you make - every step you take and the decisions you make - every step you take and the decisions you make", "background": "../assets/backgroundTwo.jpg", "id": 2},
-    {"name": "feel life and every moment with determination - feel life and every moment with determination - feel life and every moment with determination - feel life and every moment with determination - feel life and every moment with determination", "background": "../assets/backgroundThree.jpg", "id": 3}
+    {"name": "find the best style that represents you - find the best style that represents you - find the best style that represents you - find the best style that represents you - find the best style that represents you " , "background": "assets/backgroundOne.jpg" , "id": 1},
+    {"name": "every step you take and the decisions you make - every step you take and the decisions you make - every step you take and the decisions you make - every step you take and the decisions you make - every step you take and the decisions you make", "background": "assets/backgroundTwo.jpg", "id": 2},
+    {"name": "feel life and every moment with determination - feel life and every moment with determination - feel life and every moment with determination - feel life and every moment with determination - feel life and every moment with determination", "background": "assets/backgroundThree.jpg", "id": 3}
 ]
  
 
