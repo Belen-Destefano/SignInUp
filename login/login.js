@@ -24,8 +24,8 @@ const initBG = () => {
     spinnerOverlay.classList.remove("spinnerNone");
     setTimeout(() => {
       spinnerOverlay.classList.add("spinnerNone");
-      // document.location.href = "../index.html";
-      document.location.href = " https://belen-destefano.github.io/SignInUp/";
+      document.location.href = "/index.html";
+      // document.location.href = " https://belen-destefano.github.io/SignInUp/";
     }, 2000);
   });
   //redirrecion al sign up
@@ -33,8 +33,8 @@ const initBG = () => {
     spinnerOverlay.classList.remove("spinnerNone");
     setTimeout(() => {
       spinnerOverlay.classList.add("spinnerNone");
-      // document.location.href = "../signup/signUp.html";
-      document.location.href = " https://belen-destefano.github.io/SignInUp/signup/signUp.html";
+      document.location.href = "/signup/signUp.html";
+      // document.location.href = " https://belen-destefano.github.io/SignInUp/signup/signUp.html";
     }, 2000);
   });
 };
