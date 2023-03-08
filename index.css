@@ -35,6 +35,7 @@
     width: 40px;
     height: 40px;
     animation: spin 1s linear infinite;
+    
 }
 
 @keyframes spin {
@@ -51,6 +52,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 30;
+
 }
 
 .spinnerNone{
@@ -181,9 +184,10 @@ p{
     background-image: url(assets/encabezadoOne.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: brightness(0.5);
+    /* backdrop-filter: brightness(0.5); */
     background-position-y: bottom;
 }
+
 
 .containerButtomFooterHome{
             
@@ -193,6 +197,9 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    filter: none !important;
+    z-index: 30;
+   
 
 }
 
@@ -201,15 +208,24 @@ p{
     cursor: pointer;
     border: 0px;
     padding: 3%;
+   
 }
+
+
 
 .buttonHome:hover {
-    background-color: #dddd2e;
-    color: rgb(255, 255, 255);
+   filter: none;
+    background-color: #7c7c7c;
+    /* background-color: #dddd2e !important; */
+    color: rgb(255, 255, 255);    
+   
+    
 }
 
+
 button:hover p{
-text-shadow: 1px 0px 3px #575151;
+    text-shadow: 1px 0px 3px #575151;
+
 }
 
 
@@ -224,6 +240,7 @@ text-shadow: 1px 0px 3px #575151;
     /* padding-bottom: 4%; */
 
     background-image: url(assets/encabezadoOne.jpg);
+    filter: sepia(1);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -238,7 +255,7 @@ text-shadow: 1px 0px 3px #575151;
     background-image: url(assets/backgroundOne.jpg);
     background-repeat: repeat;
     background-size: contain;
-    backdrop-filter: brightness(0.5);
+    backdrop-filter: sepia(1);
     background-position-y: bottom;
 }
 
@@ -284,9 +301,10 @@ select {
 
     transform: rotate(13deg) scale(2.0);
     height: 40vh;
-    background-image: url(assets/encabezadoOne.jpg);
+    background-image: url(assets/backgroundOne.jpg);
+    /* background-image: url(assets/encabezadoOne.jpg); */
     background-repeat: no-repeat;
-    background-position-y: initial;
+    background-position-y: bottom;
     background-size: cover;
 
 }
@@ -351,7 +369,7 @@ select {
 }
 /************/
 .containerLogin {
-    width: 26em;
+    width: 24em;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -378,6 +396,7 @@ select {
 .signUpForm input{
 
     margin: 0px 6px;
+    width: 9em;
 }
 
 
@@ -405,8 +424,7 @@ select {
 
 
     .containerUser {
-     
-        height: 86%;
+        height: 90%;
     }
 
     
@@ -421,14 +439,18 @@ select {
  
 
     .containerUser {
-     
-        height: 80%;
+        height: 90%;
     }
 
     #menu {
       
         width: 43px !important;
+        /* margin: -100px 0 0 -35px !important;
+        padding: 56px !important; */
     }
+
+
+
 
     
 }

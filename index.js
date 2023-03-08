@@ -8,6 +8,7 @@
 // Seleccionar elementos del DOM
 const spinnerOverlay = document.querySelector(".spinnerOverlay");
 const nav = document.querySelector(".nav");
+const containerHome = document.querySelector(".containerHome");
 let interval;
 const userBoton = document.querySelector(".userBoton");
 const userWelcome = document.querySelector(".userWelcome");
@@ -40,14 +41,17 @@ const userLoged = (user) => {
   return valid;
 };
 
-// Función para renderizar el usuario logueado
+// Cambio en el renderizado después de iniciar sesión del usuario
 function renderuserLoged(userlogedTrue) {
 
   if(userLoged){
 
-    traerBackgrounds();
-    userWelcome.innerHTML = `Welcome ${userlogedTrue.name}`;
-  
+    //condicional para que no haga background dinamico si esta en modo mobile
+    if (window.innerWidth > 420) {
+      traerBackgrounds();
+    }
+
+    //que aparazca con hover el boton para cerrar sesion
     userBoton.addEventListener("mouseover", () => {
       logoutnone.classList.add("logoutblock");
     });
@@ -55,6 +59,10 @@ function renderuserLoged(userlogedTrue) {
     userBoton.addEventListener("mouseout", () => {
       logoutnone.classList.remove("logoutblock");
     });
+
+    //otros cambios en el renderizado
+    containerHome.style.filter = "none";
+    userWelcome.innerHTML = `Welcome ${userlogedTrue.name}`;
   
     nav.classList.remove("navNone");
   
@@ -72,7 +80,8 @@ const renderuserLogOut= (userlogedTrue) =>{
   spinnerOverlay.classList.remove("spinnerNone");
 
   setTimeout(() => {
-    spinnerOverlay.classList.add("spinnerNone");    
+    spinnerOverlay.classList.add("spinnerNone");  
+    containerHome.style.filter = "sepia(1)"  
     userBoton.style.display = "none";
     nav.classList.add("navNone");
     homeTitle.innerHTML = `Login for more information`;
@@ -111,6 +120,7 @@ const closingSession = (userlogedTrue) => {
 
 // Función para traer los backgrounds dinámicos
 const traerBackgrounds = async () => {
+  
   fetch("background.json")
     .then((response) => response.json())
     .then((data) => {
@@ -120,6 +130,7 @@ const traerBackgrounds = async () => {
       function changeBackground() {
         document.body.style.backgroundImage = `url(${data[currentBackground].background})`;
         currentBackground = (currentBackground + 1) % backgrounds.length;
+
       }
 
       interval = setInterval(changeBackground, 5000);
@@ -129,6 +140,7 @@ const traerBackgrounds = async () => {
 // Función de inicialización
 const init = () => {
     userLoged(user);
+    spinnerOverlay.classList.add("spinnerNone");
   
  // Redirección al login
     gotoLogin.addEventListener("click", () => {
