@@ -81,7 +81,7 @@ const renderuserLogOut= (userlogedTrue) =>{
 
   setTimeout(() => {
     spinnerOverlay.classList.add("spinnerNone");  
-    containerHome.style.filter = "sepia(1)"  
+    containerHome.style.filter = "grayscale()"  
     userBoton.style.display = "none";
     nav.classList.add("navNone");
     homeTitle.innerHTML = `Login for more information`;
