@@ -240,7 +240,7 @@ button:hover p{
     /* padding-bottom: 4%; */
 
     background-image: url(assets/encabezadoOne.jpg);
-    filter: sepia(1);
+    filter: grayscale();
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -255,7 +255,7 @@ button:hover p{
     background-image: url(assets/backgroundOne.jpg);
     background-repeat: repeat;
     background-size: contain;
-    backdrop-filter: sepia(1);
+    backdrop-filter: grayscale(1);
     background-position-y: bottom;
 }
 

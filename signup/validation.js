@@ -226,6 +226,9 @@ const submitForm = (e) => {
     
     saveData(); // guardamos los datos
     form.reset(); // reseteamos el formulario
+    passwordInput.innerHTML="";
+    emailInput.innerHTML="";
+
     saveLocalStorage(); // guardamos en el localstorage
     form.submit();
 
